@@ -10,4 +10,180 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>莫妮卡｜景觀顧問 · 生活美學 · 事業夥伴</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft JhengHei', sans-serif;
+        }
+        body {
+            background: #f8f8f8;
+            color: #333;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 28px;
+            color: #2d4a42;
+        }
+        header p {
+            color: #666;
+            margin-top: 8px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: #e6eee9;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .tab.active {
+            background: #4a6b5f;
+            color: white;
+        }
+        .section {
+            display: none;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .section.active {
+            display: block;
+        }
+        .section h2 {
+            color: #2d4a42;
+            margin-bottom: 16px;
+            font-size: 22px;
+        }
+        .section ul {
+            padding-left: 20px;
+            margin: 12px 0;
+        }
+        .section li {
+            margin-bottom: 8px;
+        }
+        .form-box {
+            background: #fff;
+            padding: 24px;
+            border-radius: 12px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+        button {
+            background: #4a6b5f;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <header>
+        <h1>莫妮卡｜景觀顧問 · 生活美學 · 事業夥伴</h1>
+        <p>專業景觀規劃｜生活品質提升｜副業增收合作</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab active" onclick="openTab('tab1')">景觀顧問</button>
+        <button class="tab" onclick="openTab('tab2')">生活美學會員</button>
+        <button class="tab" onclick="openTab('tab3')">事業夥伴</button>
+    </div>
+
+    <!-- 方案1：景觀顧問（你要的專業、低成本、低維護、省錢） -->
+    <div class="section active" id="tab1">
+        <h2>景觀顧問｜專業規劃．低成本．低維護．好管理</h2>
+        <p><strong>只做顧問，不施工、不販售材料，專注專業價值</strong></p>
+        <ul>
+            <li>協助客戶規劃最適合的景觀配置，降低未來維護成本</li>
+            <li>規劃省水、省時、低照護、好管理的植栽與空間</li>
+            <li>避開高成本設計，減少預算浪費</li>
+            <li>提供專業景觀評估、改善建議、完整規劃報告</li>
+            <li>協助與廠商溝通，避免亂報價</li>
+        </ul>
+        <p><br><strong>適合：</strong>社區、透天、店面、商業空間、想長期省錢省維護的客戶</p>
+    </div>
+
+    <!-- 方案2：生活美學會員（純享受、醫美、健康、交流） -->
+    <div class="section" id="tab2">
+        <h2>生活美學會員｜健康．醫美．交流．純享受</h2>
+        <p><strong>不推銷、不做事業、不囤貨，單純提升生活品質</strong></p>
+        <ul>
+            <li>年度健康營養補給，照顧身體基礎</li>
+            <li>專屬醫美資源與優惠，變美更省錢</li>
+            <li>同頻朋友交流、生活分享、輕鬆社交</li>
+            <li>無業績壓力、無銷售責任</li>
+        </ul>
+        <p><br><strong>適合：</strong>注重生活品質、想放鬆、變美、照顧健康的人</p>
+    </div>
+
+    <!-- 方案3：事業夥伴（增加收入、零庫存） -->
+    <div class="section" id="tab3">
+        <h2>景觀顧問事業夥伴｜低門檻．零庫存．第二收入</h2>
+        <p><strong>不用施工、不用囤貨、不用懂設計，也能合作</strong></p>
+        <ul>
+            <li>介紹景觀需求客戶，即可獲顧問回饋</li>
+            <li>介紹生活美學會員，可獲額外收入</li>
+            <li>我提供專業報告、後端支援、完整SOP</li>
+            <li>適合想增加副業、有人脈、想穩定增收的人</li>
+        </ul>
+    </div>
+
+    <div class="form-box">
+        <h3>預約諮詢</h3>
+        <input type="text" placeholder="姓名">
+        <input type="text" placeholder="聯絡方式">
+        <input type="text" placeholder="需求類型（景觀 / 生活會員 / 事業夥伴）">
+        <textarea rows="4" placeholder="備註"></textarea>
+        <button>送出預約</button>
+    </div>
+</div>
+
+<script>
+    function openTab(tabId) {
+        const sections = document.querySelectorAll('.section');
+        const tabs = document.querySelectorAll('.tab');
+        sections.forEach(s => s.classList.remove('active'));
+        tabs.forEach(t => t.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        event.target.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
